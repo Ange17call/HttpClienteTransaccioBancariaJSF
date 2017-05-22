@@ -1,0 +1,23 @@
+<f:view xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<h:head>
+		<title>Index</title>
+	</h:head>
+
+	<h:body>
+		<h:form>
+			<h:outputLabel for="cuenta1" value="Cuenta1: "/>
+			<h:inputText id="cuenta1" value="#{beanJSF.cuenta1}"/>
+			<br/><br/>
+			<h:outputLabel for="cuenta2" value="Cuenta2: "/>
+			<h:inputText id="cuenta2" value="#{beanJSF.cuenta2}"/>
+			<br/><br/>
+			<h:outputLabel for="monto" value="Monto: "/>
+			<h:inputText id="monto" value="#{beanJSF.monto}"/>
+			<br/><br/>
+			<h:commandButton value="TRANSFERIR" action="#{beanJSF.transferir}"/>
+		</h:form>
+	</h:body>
+
+</f:view>
